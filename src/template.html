@@ -6,7 +6,7 @@
     <title>Justice Uwaje | Web Developer</title>
   </head>
   <body>
-    <div class="page">
+    <div class="page-wrapper">
       <header>
         <div class="about-card">
           <div class="profile-card">
@@ -20,7 +20,7 @@
 
           <h2 class="about-card__title">About me</h2>
 
-          <p class="about-card__content">
+          <p class="about-card__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
             porro hic beatae voluptatibus nostrum alias vel, obcaecati
             cupiditate. Minus aut voluptatum officia nisi molestiae. Sed nostrum
@@ -29,15 +29,16 @@
             odio sequi. Reprehenderit doloribus alias voluptatum!
           </p>
 
-          <ul class="link-icons">
+          <ul class="about-card__social-links">
             <li>
               <a
                 href="#"
                 class="link-icons__link"
                 aria-label="Visit justice_codes github profile."
                 ><img
+                  class="icon icon--md"
                   src="./assets/images/github-original.svg"
-                  alt="GitHub profile link"
+                  alt=""
                 />
               </a>
             </li>
@@ -48,8 +49,9 @@
                 aria-label="Visit justice_codes linkedin profile."
               >
                 <img
+                  class="icon icon--md"
                   src="./assets/images/linkedin-plain.svg"
-                  alt="LinkedIn profile link"
+                  alt=""
                 />
               </a>
             </li>
@@ -60,8 +62,9 @@
                 aria-label="Visit justice_codes twitter profile"
               >
                 <img
+                  class="icon icon--md"
                   src="./assets/images/twitter-original.svg"
-                  alt="Twitter profile link"
+                  alt=""
                 />
               </a>
             </li>
@@ -69,17 +72,17 @@
         </div>
       </header>
       <main>
-        <h2 class="main-area-title">My Work</h2>
-        <ul class="project-list">
-          <li>
-            <article class="project-card">
-              <!-- <img src="#" alt="Screenshot of project." /> -->
-              <div class="project-card__img red">
-                <p>Screenshot of project</p>
-              </div>
-              <div class="project-card__info-wrapper">
-                <div>
-                  <h3 class="project-card__title">Project name</h3>
+        <section>
+          <h2 class="my-work-title">My Work</h2>
+
+          <ul class="project-list">
+            <li>
+              <article class="project-card">
+                <div class="project-card__img">
+                  <p>Screenshot of project</p>
+                </div>
+                <div class="project-card__info">
+                  <h3>Project name</h3>
                   <ul class="project-card__links">
                     <li>
                       <a
@@ -87,7 +90,10 @@
                         aria-label="Visit project repository on github."
                         class="project-card__link"
                       >
-                        <img src="./assets/images/github-original.svg" alt=""
+                        <img
+                          class="icon icon--sm"
+                          src="./assets/images/github-original.svg"
+                          alt=""
                       /></a>
                     </li>
                     <li>
@@ -95,7 +101,11 @@
                         href="#"
                         aria-label="Visit project live in new page."
                         class="project-card__link"
-                        ><img src="./assets/images/open-in-new.svg" alt="" />
+                        ><img
+                          class="icon icon--sm"
+                          src="./assets/images/open-in-new.svg"
+                          alt=""
+                        />
                       </a>
                     </li>
                   </ul>
@@ -104,190 +114,10 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Praesentium, velit exercitationem.
                 </p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="project-card">
-              <!-- <img src="#" alt="Screenshot of project." /> -->
-              <div class="project-card__img purple">
-                <p>Screenshot of project</p>
-              </div>
-              <div class="project-card__info-wrapper">
-                <div>
-                  <h3 class="project-card__title">Project name</h3>
-                  <ul class="project-card__links">
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project repository on github."
-                        class="project-card__link"
-                      >
-                        <img src="./assets/images/github-original.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project live in new page."
-                        class="project-card__link"
-                        ><img src="./assets/images/open-in-new.svg" alt="" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <p class="project-card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Praesentium, velit exercitationem.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="project-card">
-              <!-- <img src="#" alt="Screenshot of project." /> -->
-              <div class="project-card__img pink">
-                <p>Screenshot of project</p>
-              </div>
-              <div class="project-card__info-wrapper">
-                <div>
-                  <h3 class="project-card__title">Project name</h3>
-                  <ul class="project-card__links">
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project repository on github."
-                        class="project-card__link"
-                      >
-                        <img src="./assets/images/github-original.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project live in new page."
-                        class="project-card__link"
-                        ><img src="./assets/images/open-in-new.svg" alt="" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <p class="project-card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Praesentium, velit exercitationem.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="project-card">
-              <!-- <img src="#" alt="Screenshot of project." /> -->
-              <div class="project-card__img orange">
-                <p>Screenshot of project</p>
-              </div>
-              <div class="project-card__info-wrapper">
-                <div>
-                  <h3 class="project-card__title">Project name</h3>
-                  <ul class="project-card__links">
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project repository on github."
-                        class="project-card__link"
-                      >
-                        <img src="./assets/images/github-original.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project live in new page."
-                        class="project-card__link"
-                        ><img src="./assets/images/open-in-new.svg" alt="" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <p class="project-card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Praesentium, velit exercitationem.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="project-card">
-              <!-- <img src="#" alt="Screenshot of project." /> -->
-              <div class="project-card__img blue">
-                <p>Screenshot of project</p>
-              </div>
-              <div class="project-card__info-wrapper">
-                <div>
-                  <h3 class="project-card__title">Project name</h3>
-                  <ul class="project-card__links">
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project repository on github."
-                        class="project-card__link"
-                      >
-                        <img src="./assets/images/github-original.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project live in new page."
-                        class="project-card__link"
-                        ><img src="./assets/images/open-in-new.svg" alt="" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <p class="project-card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Praesentium, velit exercitationem.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="project-card">
-              <!-- <img src="#" alt="Screenshot of project." /> -->
-              <div class="project-card__img green">
-                <p>Screenshot of project</p>
-              </div>
-              <div class="project-card__info-wrapper">
-                <div>
-                  <h3 class="project-card__title">Project name</h3>
-                  <ul class="project-card__links">
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project repository on github."
-                        class="project-card__link"
-                      >
-                        <img src="./assets/images/github-original.svg" alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        aria-label="Visit project live in new page."
-                        class="project-card__link"
-                        ><img src="./assets/images/open-in-new.svg" alt="" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <p class="project-card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Praesentium, velit exercitationem.
-                </p>
-              </div>
-            </article>
-          </li>
-        </ul>
+              </article>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer>
         <section class="contact-me">
