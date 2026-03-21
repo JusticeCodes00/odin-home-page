@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":";;AAAmC;AACb","sources":["webpack://odin-home-page/./src/index.js"],"sourcesContent":["import \"./assets/css/fontFace.css\";\nimport \"./styles.css\";\n"],"names":[],"sourceRoot":""}
