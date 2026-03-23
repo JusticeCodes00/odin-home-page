@@ -111,10 +111,15 @@ a {
 .page-wrapper {
   max-width: var(--max-page-width);
   margin: 0 auto;
-  padding: var(--space-m);
+}
+
+header,
+main {
+  padding: 0 var(--space-m);
 }
 
 header {
+  padding-top: var(--space-m);
   margin-bottom: var(--space-3xl);
 }
 
@@ -126,6 +131,10 @@ header {
 
 main {
   margin-bottom: var(--space-3xl);
+}
+
+footer {
+  background-color: var(--clr-bg-500);
 }
 
 /* || Components */
@@ -190,6 +199,10 @@ main {
   width: 25px;
 }
 
+.icon--xs {
+  width: 18px;
+}
+
 /* Project card */
 
 .project-card {
@@ -232,9 +245,49 @@ main {
 }
 
 .project-card__description {
-  padding: var(--space-s) var(--space-l) var(--space-2xl);
+  padding: var(--space-s) var(--space-s) var(--space-2xl);
 }
 
+/* Contact me */
+.contact-me {
+  display: grid;
+  color: var(--clr-txt-500);
+  grid-template-columns: 1fr;
+}
+.contact-me__wrapper {
+  padding: var(--space-m) var(--space-m) var(--space-3xl);
+}
+
+.contact-me__title {
+  font-size: var(--fs-4);
+  margin-bottom: var(--space-2xs);
+}
+
+.contact-me__para {
+  font-size: var(--fs-1);
+}
+
+.contact-me__address,
+.contact-me__para,
+.contact-me__contact-details {
+  margin-bottom: var(--space-s);
+}
+
+.contact-me__contact-details > div {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.contact-me__contact-details svg {
+  fill: #fff;
+}
+
+.contact-me__links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs);
+}
 /* 
 .project-card__img.purple {
   background-color: #7c75ca;
